@@ -147,6 +147,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.ttl {
+  text-align: center;
+}
+.ttl h2 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 51px;
+  text-transform: uppercase;
+  letter-spacing: 0.31px;
+}
+
+main header {
+  position: relative;
+}
 main header .container-header {
   max-width: 1360px;
   width: 100%;
@@ -172,23 +188,182 @@ main header .container-header .site-header {
 main header .container-header .site-header a {
   color: #c5a07c;
 }
+main header .container-header .address-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
 main header .container-header .address-header i img {
   height: 39px;
   width: 29px;
 }
 main header .container-header .address-header span {
+  margin-left: 15px;
   color: #000;
   font-size: 23px;
   line-height: 11px;
   font-weight: 400;
   letter-spacing: 0.57px;
 }
-main header .container-header .phone-header a i img {
+main header .container-header .phone-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+main header .container-header .phone-header i img {
   width: 37px;
   height: 37px;
 }
 main header .container-header .phone-header a span {
+  margin-left: 15px;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 0.63px;
+}
+main header .local {
+  position: absolute;
+  top: 0;
+  right: 31px;
+}
+main header .local ul li {
+  display: inline-block;
+}
+main header .local ul li a {
+  color: #8a8888;
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 44px;
+}
+main header .local ul li.active a {
+  color: #000;
+}
+main section.one-screen {
+  min-height: 617px;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+main section.one-screen .item-desc {
+  width: 46%;
+  background: url(../img/bg-one.jpg);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.one-screen .item-desc .logo-data .logo img {
+  max-width: 495px;
+  width: 100%;
+  height: auto;
+}
+main section.one-screen .item-desc .logo-data .slogan {
+  color: #fff;
+  font-family: Lato;
+  font-size: 37px;
+  line-height: 1.3em;
+}
+main section.one-screen .item-desc .logo-data .slogan p span {
+  color: #000;
+  font-weight: 900;
+}
+main section.one-screen .item-desc .logo-data nav {
+  color: #000;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 51px;
+  margin-top: 90px;
+}
+main section.one-screen .item-desc .logo-data nav ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+main section.one-screen .item-desc .logo-data nav ul li:after {
+  content: ".";
+  font-size: 85px;
+  color: #fff;
+  position: relative;
+  padding: 0px 7px 0px 15px;
+  top: -2px;
+}
+main section.one-screen .item-desc .logo-data nav ul li:last-child:after {
+  content: "";
+}
+main section.one-screen .slider-item {
+  position: relative;
+  flex: none;
+}
+main section.one-screen .slider-item .slides {
+  width: 100%;
+  height: 100%;
+}
+main section.one-screen .slider-item .slides .slide {
+  height: 100%;
+}
+main section.one-screen .slider-item .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+main section.one-screen .slider-item .navs .prev {
+  position: absolute;
+  z-index: 33;
+  left: 31px;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+main section.one-screen .slider-item .navs .next {
+  position: absolute;
+  z-index: 33;
+  right: 31px;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+main section.two-screen {
+  min-height: 488px;
+  background: #a07262;
+  width: 100%;
+}
+main section.two-screen .vantage {
+  padding-top: 70px;
+}
+main section.two-screen .vantage .flex-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 70px;
+}
+main section.two-screen .vantage .flex-wrap .item-vantage {
+  text-align: center;
+  max-width: 230px;
+}
+main section.two-screen .vantage .flex-wrap .item-vantage .img img {
+  max-width: 100%;
+  height: auto;
+}
+main section.two-screen .vantage .flex-wrap .item-vantage p {
+  color: #fff;
+  font-family: Lato;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 21px;
 }

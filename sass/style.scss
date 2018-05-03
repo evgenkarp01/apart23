@@ -46,8 +46,21 @@ $ttl:31px;
 body{
     font-family: 'Lato', sans-serif;
 }
+.ttl{
+    text-align: center;
+    h2{
+        color: $wt;
+        font-family: Lato;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 51px;
+        text-transform: uppercase;
+        letter-spacing: 0.31px;
+    }
+}
 main{
     header{
+        position: relative;
         .container-header{
             max-width: 1360px;
             width: 100%;
@@ -69,6 +82,8 @@ main{
                 }
             }
             .address-header{
+                @include fl();
+                align-items: center;
                 i{
                     img{
                         height: 39px;
@@ -76,6 +91,7 @@ main{
                     }
                 }
                 span{
+                    margin-left: 15px;
                     color: $bk;
                     font-size: 23px;
                     line-height: 11px;
@@ -84,14 +100,17 @@ main{
                 }
             }
             .phone-header{
-                a{
+                @include fl();
+                align-items: center;
                     i{
                         img{
                             width: 37px;
                             height: 37px;
                         }
                     }
+                a{
                     span{
+                        margin-left: 15px;
                         font-size: 25px;
                         font-weight: $bold;
                         letter-spacing: 0.63px;
@@ -100,8 +119,164 @@ main{
                 
             }
         }
+        .local{
+            position: absolute;
+            top: 0;
+            right: 31px;
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        color: #8a8888;
+                        font-family: Lato;
+                        font-size: 19px;
+                        font-weight: 400;
+                        line-height: 44px;
+                    }
+                    &.active{ 
+                        a{
+                            color: $bk;
+                        }
+                    }
+                }
+            }
+        }
     }
-
+    section{
+        &.one-screen{
+            min-height: 617px;
+            height: 100%;
+            @include fl();
+            .item-desc{
+                width: 46%;
+                background: url(../img/bg-one.jpg);
+                @include fl();
+                justify-content: center;
+                align-items: center;
+                .logo-data{
+                    .logo{
+                        img{
+                            max-width: 495px;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .slogan{
+                        color: $wt;
+                        font-family: Lato;
+                        font-size: 37px;
+                        line-height: 1.3em;
+                        p{
+                            span{
+                                color: $bk;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                    nav{
+                        color: $bk;
+                        font-family: Lato;
+                        font-size: 22px;
+                        font-weight: $bold;
+                        line-height: 51px;
+                        margin-top: 90px;
+                        ul{
+                            li{
+                                list-style: none;
+                                display: inline-block;
+                                position: relative;
+                                a{
+                                    
+                                }
+                                &:after{
+                                    content: ".";
+                                    font-size: 85px;
+                                    color: $wt;
+                                    position: relative;
+                                    padding: 0px 7px 0px 15px;
+                                    top: -2px;
+                                }
+                                &:last-child:after{
+                                    content: ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .slider-item{
+                position: relative;
+                flex: none;
+                .slides{
+                    width: 100%;
+                    height: 100%;
+                    .slide{
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .navs{
+                    .prev{
+                        position: absolute;
+                        z-index: 33;
+                        left: 31px;
+                        top: 50%;
+                        margin-top: -25px;
+                        cursor: pointer;
+                        img{
+                            
+                        }
+                    }
+                    .next{
+                        position: absolute;
+                        z-index: 33;
+                        right: 31px;
+                        top: 50%;
+                        margin-top: -25px;
+                        cursor: pointer;
+                        img{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        &.two-screen{
+            min-height: 488px;
+            background: $bgcolor;
+            width: 100%;
+            .vantage{
+                padding-top: 70px;
+                .flex-wrap{
+                    @include fl();
+                    justify-content: space-around;
+                    align-items: baseline;
+                    
+                    margin-top: 70px;
+                    .item-vantage{
+                        text-align: center;
+                        max-width: 230px;
+                        .img{
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                        p{
+                            color: $wt;
+                            font-family: Lato;
+                            font-size: 23px;
+                            font-weight: 500;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
