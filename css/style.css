@@ -1,0 +1,194 @@
+/* NORMALIZE */
+/* ================================================ */
+html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Tahoma, sans-serif;
+  line-height: 1;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+input, textarea {
+  color: #333;
+  outline: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+td, form {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #000100;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Heavy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+main header .container-header {
+  max-width: 1360px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 115px;
+  -webkit-align-items: center;
+  align-items: center;
+}
+main header .container-header .site-header {
+  font-family: Lato;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 11px;
+}
+main header .container-header .site-header a {
+  color: #c5a07c;
+}
+main header .container-header .address-header i img {
+  height: 39px;
+  width: 29px;
+}
+main header .container-header .address-header span {
+  color: #000;
+  font-size: 23px;
+  line-height: 11px;
+  font-weight: 400;
+  letter-spacing: 0.57px;
+}
+main header .container-header .phone-header a i img {
+  width: 37px;
+  height: 37px;
+}
+main header .container-header .phone-header a span {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.63px;
+}

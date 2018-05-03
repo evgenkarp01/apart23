@@ -1,0 +1,128 @@
+@import "_normalize";
+$LBk: 'Lato-Black';
+$LB: 'Lato-Bold';
+$LH: 'Lato-Heavy';
+$LM: 'Lato-Medium';
+$LMi: 'Lato-MediumItalic';
+$L: 'Lato-Regular';
+
+$normal: normal;
+$italic: italic;
+$bold: bold;
+$medium: 500;
+$heavy: 700;
+$black: 900;
+
+$dir:'../fonts/';
+$bgcolor:#a07262;
+$wt:#fff;
+$bk:#000;
+$accentcolor:#c5a07c;
+$ttl:31px;
+
+@mixin fl(){
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+@mixin trans($x,$y,$z,$t){
+    -webkit-transition: $x $y+s $z $t+s;
+     -moz-transition: $x $y+s $z $t+s;
+     -o-transition: $x $y+s $z $t+s;
+     transition: $x $y+s $z $t+s;
+}
+@mixin font($fontname, $fweight, $fstyle){
+    @font-face {
+                font-family: Lato;
+                src: url($dir+$fontname+'.ttf') format("truetype");
+                font-weight: $fweight;
+                font-style: $fstyle;
+    }
+}
+@include font($LBk, $black, $normal);@include font($LB, $bold, $normal);@include font($LH, $heavy, $normal);@include font($LM, $medium, $normal);@include font($LMi, $medium, $italic);@include font($L, $normal, $normal);
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+main{
+    header{
+        .container-header{
+            max-width: 1360px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            @include fl();
+            -webkit-justify-content: space-between;
+                    justify-content: space-between;
+            min-height: 115px;
+            -webkit-align-items: center;
+                    align-items: center;
+            .site-header{
+                font-family: Lato;
+                font-size: 25px;
+                font-weight: 800;
+                line-height: 11px;
+                a{
+                    color: $accentcolor;
+                }
+            }
+            .address-header{
+                i{
+                    img{
+                        height: 39px;
+                        width: 29px;
+                    }
+                }
+                span{
+                    color: $bk;
+                    font-size: 23px;
+                    line-height: 11px;
+                    font-weight: 400;
+                    letter-spacing: 0.57px;
+                }
+            }
+            .phone-header{
+                a{
+                    i{
+                        img{
+                            width: 37px;
+                            height: 37px;
+                        }
+                    }
+                    span{
+                        font-size: 25px;
+                        font-weight: $bold;
+                        letter-spacing: 0.63px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
