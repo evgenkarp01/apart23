@@ -1,12 +1,108 @@
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1400px){
+	main section.one-screen .item-desc .logo-data nav{
+		margin-top: 10px;
+		font-size: 19px;
+	}
+	.logo-data{
+		padding: 0 15px;
+	}
 
 }
-@media only screen and (max-width: 992px){
-
+@media only screen and (max-width: 1300px){
+	main section.one-screen .item-desc .logo-data nav ul li:after {
+	    font-size: 80px;
+	    padding: 0px 0px 0px 3px;
+	    top: -1px;
+	}
+	main section.one-screen .item-desc .logo-data .slogan{
+		font-size: 31px;
+	}
+}
+@media only screen and (max-width: 1200px){
+	main header .container-header{
+		margin: 37px 0;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	main header .local{
+		top: -36px;
+	}
+	main section.one-screen{
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	main section.one-screen .item-desc{
+		width: 100%;
+	}
+	main section.one-screen .slider-item{
+		width: 100%;
+	}
+	main section.one-screen .item-desc .logo-data .slogan{
+		font-size: 37px;
+		text-align: center;
+	}
+	main section.one-screen .item-desc .logo-data nav{
+		display: none;
+	}
+	.logo-data{
+		margin: 100px 0;
+	}
 }
 @media only screen and (max-width: 768px){
 	
 }
-@media only screen and (max-width: 480px){
-	
+@media only screen and (max-width: 490px){
+	main header .container-header .address-header{
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    text-align: center;
+	}
+	main header .container-header .address-header img{
+		margin: 25px 0 5px 0;
+	}
+	main header .container-header .address-header span {
+   		line-height: 28px;
+   		margin-left: 0;
+    }
+    main header .container-header .address-header span br{
+    	display: block;
+    }
+    main header .container-header .phone-header{
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    }
+    main header .container-header .phone-header img{
+    	margin: 25px 0 5px 0;
+    }
+    main header .container-header .phone-header a span{
+    	margin-left: 0;
+    }
+    main section.one-screen .item-desc .logo-data nav{
+    	display: block;
+    	text-align: center;
+    }
+    main section.one-screen .item-desc .logo-data nav ul{
+    	display: flex;
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    }
+    main section.one-screen .item-desc .logo-data nav ul li:after{
+    	display: block;
+    	margin: 0;
+    	padding: 0;
+    	line-height: 0;
+    	top: -19px;
+    }
+    main section.one-screen .item-desc .logo-data nav ul li a{
+    	z-index: 999;
+    	position: relative;
+    }
+    main section.one-screen .item-desc .logo-data .slogan{
+    	font-size: 34px;
+    }
 }
