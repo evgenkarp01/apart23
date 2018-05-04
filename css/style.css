@@ -294,6 +294,7 @@ main section.one-screen .item-desc .logo-data nav ul li {
   list-style: none;
   display: inline-block;
   position: relative;
+  text-transform: uppercase;
 }
 main section.one-screen .item-desc .logo-data nav ul li:after {
   content: ".";
@@ -331,6 +332,15 @@ main section.one-screen .slider-item .navs .prev {
   margin-top: -25px;
   cursor: pointer;
 }
+main section.one-screen .slider-item .navs .prev img {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+main section.one-screen .slider-item .navs .prev:hover img {
+  filter: brightness(50%);
+}
 main section.one-screen .slider-item .navs .next {
   position: absolute;
   z-index: 33;
@@ -338,6 +348,15 @@ main section.one-screen .slider-item .navs .next {
   top: 50%;
   margin-top: -25px;
   cursor: pointer;
+}
+main section.one-screen .slider-item .navs .next img {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+main section.one-screen .slider-item .navs .next:hover img {
+  filter: brightness(50%);
 }
 main section.two-screen {
   min-height: 488px;
@@ -371,9 +390,9 @@ main section.two-screen .vantage .flex-wrap .item-vantage p {
   font-size: 23px;
   font-weight: 500;
   line-height: 21px;
+  margin-top: 25px;
 }
 main section.three-screen {
-  min-height: 610px;
   height: 100%;
   display: -webkit-flex;
   display: -moz-flex;
@@ -490,6 +509,15 @@ main section.three-screen .slider-item .navs .prev {
   margin-top: -25px;
   cursor: pointer;
 }
+main section.three-screen .slider-item .navs .prev img {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+main section.three-screen .slider-item .navs .prev:hover img {
+  filter: brightness(50%);
+}
 main section.three-screen .slider-item .navs .next {
   position: absolute;
   z-index: 33;
@@ -497,6 +525,15 @@ main section.three-screen .slider-item .navs .next {
   top: 50%;
   margin-top: -25px;
   cursor: pointer;
+}
+main section.three-screen .slider-item .navs .next img {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+main section.three-screen .slider-item .navs .next:hover img {
+  filter: brightness(50%);
 }
 main section.four-screen {
   min-height: 700px;
@@ -633,7 +670,7 @@ main section.six-screen .container-contacts {
   max-width: 1460px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 15px 0 15px;
 }
 main section.six-screen .container-contacts .flex-wrap {
   display: -webkit-flex;
@@ -665,6 +702,7 @@ footer .container-footer {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 15px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

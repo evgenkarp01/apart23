@@ -189,6 +189,7 @@ main{
                                 list-style: none;
                                 display: inline-block;
                                 position: relative;
+                                text-transform: uppercase;
                                 a{
                                     
                                 }
@@ -233,7 +234,10 @@ main{
                         margin-top: -25px;
                         cursor: pointer;
                         img{
-                            
+                            @include trans(all, 0.2, ease-out, 0);
+                        }
+                        &:hover img{
+                            filter: brightness(50%);
                         }
                     }
                     .next{
@@ -244,7 +248,10 @@ main{
                         margin-top: -25px;
                         cursor: pointer;
                         img{
-                            
+                            @include trans(all, 0.2, ease-out, 0);
+                        }
+                        &:hover img{
+                            filter: brightness(50%);
                         }
                     }
                 }
@@ -277,13 +284,14 @@ main{
                             font-size: 23px;
                             font-weight: 500;
                             line-height: 21px;
+                            margin-top: 25px;
                         }
                     }
                 }
             }
         }
         &.three-screen{
-            min-height: 610px;
+            
             height: 100%;
             @include fl();
             .item-desc{
@@ -390,7 +398,10 @@ main{
                         margin-top: -25px;
                         cursor: pointer;
                         img{
-                            
+                            @include trans(all, 0.2, ease-out, 0);
+                        }
+                        &:hover img{
+                            filter: brightness(50%);
                         }
                     }
                     .next{
@@ -401,7 +412,10 @@ main{
                         margin-top: -25px;
                         cursor: pointer;
                         img{
-                            
+                            @include trans(all, 0.2, ease-out, 0);
+                        }
+                        &:hover img{
+                            filter: brightness(50%);
                         }
                     }
                 }
@@ -537,7 +551,7 @@ main{
                 max-width: 1460px;
                 width: 100%;
                 margin: 0 auto;
-                padding-top: 40px;
+                padding: 40px 15px 0 15px;
                 .flex-wrap{
                     @include fl();
                     -webkit-justify-content: space-between;
@@ -571,6 +585,7 @@ footer{
             width: 100%;
             margin-right: auto;
             margin-left: auto;
+            padding: 0 15px;
             @include fl();
             -webkit-justify-content: space-between;
                     justify-content: space-between;

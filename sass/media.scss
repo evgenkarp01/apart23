@@ -6,7 +6,12 @@
 	.logo-data{
 		padding: 0 15px;
 	}
-
+    main section.three-screen .item-desc .oplet-flex .opt {
+        margin-top: 10px;
+    }
+    main section.three-screen .item-desc .oplet-flex .ttl-h3 .figura{
+        left: -36px;
+    }
 }
 @media only screen and (max-width: 1300px){
 	main section.one-screen .item-desc .logo-data nav ul li:after {
@@ -17,6 +22,18 @@
 	main section.one-screen .item-desc .logo-data .slogan{
 		font-size: 31px;
 	}
+    main section.two-screen .vantage .flex-wrap{
+        flex-wrap: wrap;
+    }
+    main section.two-screen .vantage .flex-wrap .item-vantage{
+        padding: 10px 20px;
+    }
+    main section.two-screen .vantage{
+        padding-bottom: 70px;
+    }
+    main section.three-screen .item-desc .oplet-flex .ttl-h3 .figura{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1200px){
 	main header .container-header{
@@ -49,9 +66,89 @@
 	.logo-data{
 		margin: 100px 0;
 	}
+    main section.three-screen{
+        flex-direction: column;
+    }
+    main section.three-screen .slider-item {
+        width: 100%;
+        order: 2;
+    }
+    main section.three-screen .item-desc {
+        width: 100%;
+        order: 1;
+    }
+    main section.three-screen .item-desc .oplet-flex{
+        margin: 88px 0;
+    }
+    main section.three-screen .item-desc .oplet-flex .opt{
+        margin-top: 20px;
+    }
+    main section.four-screen .container-video .video{
+        padding: 0 15px;
+    }
+    main section.five-screen .container-review .slider-review .items-review{
+        padding: 0 90px 65px 90px;
+    }
+    main section.five-screen .container-review .slider-review .nav .prev{
+        left: 6px;
+    }
+    main section.five-screen .container-review .slider-review .items-review .item .author{
+        margin-top: 35px;
+    }
+    main section.six-screen .container-contacts .flex-wrap .item .desc{
+        font-size: 26px;
+    }   
+}
+@media only screen and (max-width: 992px){
+    main section.six-screen .container-contacts .flex-wrap{
+        flex-direction: column;
+        padding-bottom: 65px;
+    }
+    main section.six-screen .container-contacts .flex-wrap .item .img{
+        display: none;
+    }
+    main section.six-screen .container-contacts .flex-wrap .item .desc{
+        margin-top: 0;
+    }
+    footer .container-footer {
+        flex-direction: column;
+        margin: 50px 0 0 0;
+    }
+    footer .copyright {
+        position: initial;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 768px){
-	
+    main section.two-screen .vantage .flex-wrap .item-vantage {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    main section.three-screen .item-desc .oplet-flex{
+        padding: 0 15px;
+    }
+    main section.five-screen .container-review .slider-review .items-review{
+        text-align: center;
+    }
+    main section.six-screen .container-contacts .flex-wrap .item .desc{
+        line-height: 33px;
+    }
+    footer .container-footer{
+        text-align: center;
+    }
+    footer .container-footer .address-footer, footer .container-footer .phone-footer{
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    footer .container-footer .address-footer img, footer .container-footer .phone-footer img{
+        margin-bottom: 10px;
+    }
+    footer .container-footer .address-footer span{
+        line-height: 1.1;
+    }
+    footer .copyright{
+        margin-top: 25px;
+    }
 }
 @media only screen and (max-width: 490px){
 	main header .container-header .address-header{
@@ -104,5 +201,42 @@
     }
     main section.one-screen .item-desc .logo-data .slogan{
     	font-size: 34px;
+    }
+    main section.three-screen .item-desc .oplet-flex .price {
+        position: relative;
+        left: 50%;
+        margin-left: -93px;
+        bottom: -48px;
+        top: inherit;
+        margin-top: 0;
+    }
+    main section.three-screen .item-desc .oplet-flex{
+        text-align: center;
+    }
+    main section.four-screen {
+        min-height: 510px;
+    }
+    main section.five-screen .container-review .slider-review .items-review{
+        padding: 0 15px 110px 15px;
+    }
+    main section.five-screen .container-review .slider-review .nav{
+        position: relative;
+        bottom: 50px;
+    }
+    main section.five-screen .container-review .slider-review .nav .prev {
+        left: 30px;
+    }
+    main section.five-screen .container-review .slider-review .nav .next{
+        right: 20px;
+    }
+    main section.five-screen .container-review .slider-review .items-review .item .author .img{
+        order: 2;
+        margin-left: 30px;
+    }
+    main section.five-screen .container-review .slider-review .items-review .item .author {
+        justify-content: center;
+    }
+    main header .local{
+        right: 15px;
     }
 }
