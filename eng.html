@@ -2,11 +2,18 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>аpartments for rent in Rostov on Don</title>
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="shortcut icon"  href="favicon.ico">
+	<script type='text/javascript'>
+        if(window.innerWidth<600)
+            location.href='http://m.apart23.ru/';
+    </script>
 </head>
 <body>
 	<main>
@@ -34,10 +41,10 @@
 		            </div>
 		            <nav>
 		                <ul>
-		                    <li><a href="">About us</a></li>
-		                    <li><a href="">Apartments</a></li>
-		                    <li><a href="">Reviews</a></li>
-		                    <li><a href="">Contact</a></li>
+		                    <li><a class="ancLinks" href="#aboutus">About us</a></li>
+		                    <li><a class="ancLinks" href="#apartaments">Apartments</a></li>
+		                    <li><a class="ancLinks" href="#review">Reviews</a></li>
+		                    <li><a class="ancLinks" href="#contacts">Contact</a></li>
 		                </ul>
 		            </nav>
 		        </div>
@@ -57,7 +64,7 @@
 		        </div>
 		    </div>
 		</section>
-		<section class="two-screen">
+		<section class="two-screen" id="aboutus">
 		    <div class="vantage">
 		        <div class="ttl">
 		            <h2>Our advantages</h2>
@@ -100,7 +107,7 @@
                 </div>
 		    </div>
 		</section>
-		<section class="three-screen">
+		<section class="three-screen" id="apartaments">
 			<div class="slider-item">
 		        <div class="slides sldr2">
 		            <div class="slide"><img src="img/slide2-1.jpg" alt=""></div>
@@ -169,7 +176,7 @@
 	            </div>
 	        </div>
 	    </section>
-		<section class="five-screen">
+		<section class="five-screen" id="review">
 			<div class="container-review">
 				<div class="ttl">
 					<h2>Reviews</h2>
@@ -224,7 +231,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="six-screen">
+		<section class="six-screen" id="contacts">
 			<div class="container-contacts">
 				<div class="ttl">
 					<h2>Contacts</h2>
@@ -263,6 +270,7 @@
 			    </ul>
 			</div>
 		</footer>
+		<a href="#" class="scrollup" style="display: inline;">Наверх</a>
 	<script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

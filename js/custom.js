@@ -15,4 +15,28 @@ $(document).ready(function(){
 	$('.sldr1 .slide').css('display', 'block');
 	$('.sldr2 .slide').css('display', 'block');
 	$('.sldr3 .rev').css('display', 'block');
+    
+    
+    $("a.ancLinks").click(function () { 
+			var elementClick = $(this).attr("href");
+			var destination = $(elementClick).offset().top;
+			$('html,body').animate( { scrollTop: destination }, 400 );
+			return false;
+		});
+    
+    $(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup, .callme').fadeIn();
+			}
+			else {
+				$('.scrollup, .callme').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
 })
